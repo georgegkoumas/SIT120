@@ -1,0 +1,89 @@
+/* Define the body (for all baground page) style */
+body {
+    background-color: #1C325C; 
+    max-width: 1024px;
+    float: none;
+    margin: 10px;
+}
+
+#header {
+    width: 1004px;
+    display: inline-block
+}
+
+/* Define the Container styles */
+#container {
+    background-color:#67307A;
+    color: white;
+    width: 1024px;
+}
+
+#nav {
+    width: 200px;
+    float: left;
+    display: block;
+    min-height: 300px;
+    
+}
+
+#main {
+    width: 800px;
+    float: left;
+    display: block;
+    min-height: 300px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+footer{
+    width: 100%;
+    
+}
+
+#left_footer {
+    width: 334px;
+     float: left;
+     display: block;
+}
+#center_footer{
+    float: middle;
+}
+#right_footer{
+    float: right;
+}
+
+#copyright{
+    float: center;
+}
