@@ -4,7 +4,7 @@
         <!--Metas-->
         <meta name=""viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="My web app "WeSee" for SIT120">
-        <!--Stylesheets-->
+        <!--External style with css file-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <title>WeSee | SIT120</title>
@@ -33,10 +33,40 @@
             </div> 
             <div id="content">
                 <div id="nav">
-                    <h3>Most Recent Articles</h3>
+                    <!--internal style-->
+                    <style>
+                        h3 {color: yellow}
+                    </style>
+                    <!--Form from https://www.w3schools.com/html/html_forms.asp-->
+                    <h3>Registration form:</h3>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value=""><br>
+                            <p></p>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value=""><br><br>
+                            <label for="fname">email:</label><br>
+                            <input type="text" id="email" name="fname" value=""><br>
+                            <p></p>
+                            <input type="submit" value="Submit">
+                            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+                        </form>
                 </div>
                 <div id="main">
-                    <h2>Summarizing Semester 1</h2>
+                    <!--inline style-->
+                    <h2 style="color:black;">Summarizing Semester 2</h2>
+                    <table>
+                        <tr>
+                            <th> What </th>
+                            <th> When </th>
+                            <th> who </th>
+                        </tr>
+                        <tr>
+                            <td> We See! </td>
+                            <td> Now! </td>
+                            <td> Web app </td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
