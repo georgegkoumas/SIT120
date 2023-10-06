@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta name="autor" content="George Gkoumas">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    img.flexible-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <h1>This is a responsive heading</h1>
+      <img class="flexible-image" src="my-image.jpg" alt="My image">
+    </div>
+
+    <div class="column">
+      <p>This is some responsive text.</p>
+    </div>
+  </div>
+</body>
+</html>

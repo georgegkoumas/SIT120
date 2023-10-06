@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width">
+ <meta name="autor" content="George Gkoumas">
+ <style>
+  .container {
+   display: flex;
+   flex-direction: row;
+  }
+
+  .column {
+   flex: 1;
+  }
+
+  img.flexible-image {
+   max-width: 100%;
+   height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+   h1 {
+    font-size: 24px;
+   }
+  }
+ </style>
+ <script>
+    function stringMethods() {
+        let str = "Hello World!";
+        console.log(str.length);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.charAt(0));
+        console.log(str.indexOf("World"));
+    }
+    function numberMethods() {
+        let num = 123.456;
+        console.log(num.toFixed(2));
+        console.log(num.toPrecision(4));
+        console.log(num.toString());
+        console.log(Number.isInteger(num));
+        console.log(Number.isNaN(num));
+    }
+    function arrayMethods() {
+        let arr = ["apple", "banana", "cherry", "date", "elderberry"];
+        console.log(arr.join(", "));
+        console.log(arr.slice(1,3));
+        console.log(arr.splice(2,0,"grape"));
+        console.log(arr.pop());
+        console.log(arr.push("fig"));
+    }
+    function dateMethods() {
+        let d = new Date();
+        console.log(d.getFullYear());
+        console.log(d.getMonth());
+        console.log(d.getDate());
+        console.log(d.getDay());
+        console.log(d.getHours());
+    }
+ </script>
+</head>
+<body onload="stringMethods(); numberMethods(); arrayMethods(); dateMethods();">
+ <div class="container">
+  <div class="column">
+   <h1>This is a responsive heading</h1>
+   <img class="flexible-image" src="my-image.jpg" alt="My image">
+  </div>
+
+  <div class="column">
+   <p>This is some responsive text.</p>
+  </div>
+ </div>
+</body>
+</html>
